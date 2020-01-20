@@ -10,7 +10,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:rgb(100, 92, 92);
+    background-color:rgb(5, 8, 31);
     font-family: 'Righteous', cursive;
    
 }
@@ -109,9 +109,10 @@ nav{
 #slider figure{
     position: relative;
     width: 500%;
+    height: 520px;
     margin: 0;
     left: 0;
-    animation: 10s slider infinite;
+    animation: 20s slider infinite;
 }
 #slider figure img{
     width: 20%;
@@ -148,6 +149,52 @@ nav{
         left: -400%;
     }
 }
+.border-testimonial {
+    height: 5px;
+    width: 160px;
+    background: #ff9800;
+    margin: 26px auto;
+}
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.stars i{
+    color:#ff9800;
+    margin-bottom: 20px;
+}
+
+.testimonials-inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial {
+    background: #fff;
+    padding: 30px;
+}
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
 
 .heading{
     font-family: 'Ubuntu', sans-serif;
@@ -163,8 +210,17 @@ nav{
     text-shadow: 0 0 10px #000;
 
 }
-h1,h2,h3,b{
+h3,b{
     font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+    background-color: #323232;
+    color: #f2f2f2;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #000;
+}
+b {
     line-height: 180%;
     color: #666;
     text-align: center;
@@ -185,6 +241,54 @@ h1,h2,h3,b{
     letter-spacing: 5px;
     text-shadow: 0 0 10px #000;
 }
+.feedback-form {
+    color: #fff;
+    font-size: 250%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #000;
+}
+
+.about {
+    height: 300vh;
+    display: flex;
+}
+.about-title {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+}
+.about-pages {
+    width: 50%;
+}
+.about-pages div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+}
+.about-pages div> p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.about-pages div:nth-child(1) {
+    background-color:rgb(201, 194, 194);
+    
+}
+.about-pages div:nth-child(2) {
+    background-color: rgb(241, 241, 241);
+
+}
+.about-pages div:nth-child(3) {
+    background-color: rgb(201, 194, 194);
+
+}
 .two-col{
     font-family: 'Ubuntu', sans-serif;
     line-height: 250%;
@@ -195,8 +299,7 @@ h1,h2,h3,b{
     padding: 0 4%;
     text-align: left;
     justify-content: space-around;
-    background-color: #323232;
-    color: #f2f2f2;
+    color: black;
 }
 section{
     overflow: auto;
@@ -205,26 +308,31 @@ section{
 .dark {
     overflow: auto;
     padding: 50px, 80px;
+    background-color: rgb(201, 194, 194);
+    
+}
+.dark-second {
+    overflow: auto;
+    padding: 50px, 80px;
     background-color: #323232;
-    color: #f2f2f2;
+    display: flex;
+    
 }
 .parallax1{
-    background: url(img/g.jpg);
-    background-size: cover;
-    min-height: 500px;
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
 }
 .parallax2{
-    background: url(img/f.jpg);
-    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0;
     min-height: 450px;
 }
-.parallax3{
-    background: url(img/h.jpg);
-    background-size: cover;
-    min-height: 400px;
-}
+
 .parallax4{
-    background: url(img/g.jpg);
+    background-color: rgb(5, 8, 31);
     background-size: cover;
     min-height: 400px;
 }
@@ -299,19 +407,20 @@ input[type=text], select, textarea {
 }
 .border {
     height: 2px;
-    width: 40px;
+    width: 50px;
     background: #ff9800;
 }
+
 ul{
     list-style: none;
-    color: black;
+    color: #fff;
     font-size: 15px;
     letter-spacing: 0.5px;
 }
 ul a {
     text-decoration: none;
     outline: none;
-    color:black;
+    color:#fff;
     transition: 0.3s;
 }
 ul a:hover {
@@ -326,31 +435,24 @@ li i{
 }
 .social-media {
     width: 100%;
-    color:black;
     text-align: center;
 
 }
-.social-media a {
-    text-decoration: none;
-}
+
 .social-media i {
-    height: 15px;
-    width: 15px;
-    margin: 20px 5px;
-    padding: 10px;
-    color: black;
     border-radius: 50%;
-    border: 1px solid grey;
     transition: 0.3s;
+    color:#fff;
 }
 .social-media i:hover {
     background: grey;
 }
 .footer-bottom {
     padding: 10px;
-    background: rgb(141, 128, 128);
-    color: black;
+    background: rgb(51, 56, 97);
+    color:cornsilk;
     font-size: 12px;
+    text-align: center;
 }
 @media screen and (max-width: 1085px) {
     .footer-items {
